@@ -1,0 +1,64 @@
+{
+  "movies": [
+    {
+      "adult": false,
+      "backdrop_path": "/dq18nCTTLpy9PmtzZI6Y2yAgdw5.jpg",
+      "genre_ids": [
+        28,
+        12,
+        53,
+        878
+      ],
+      "id": 497698,
+      "original_language": "en",
+      "original_title": "Black Widow",
+      "overview": "Natasha Romanoff, alias Viuda Negra, se enfrenta a las partes más oscuras de su historia cuando surge una peligrosa conspiración con vínculos con su pasado. Perseguida por una fuerza que no se detendrá ante nada para acabar con ella, Natasha debe enfrentarse a su historia como espía y a las relaciones rotas que dejó a su paso mucho antes de convertirse en una Vengadora.",
+      "popularity": 3267.6,
+      "poster_path": "/qjAsDcMlHXxJSfNDQGK9hs13US0.jpg",
+      "release_date": "2021-07-07",
+      "title": "Viuda negra",
+      "video": false,
+      "vote_average": 7.8,
+      "vote_count": 4067
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/6MKr3KgOLmzOP6MSuZERO41Lpkt.jpg",
+      "genre_ids": [
+        35,
+        80
+      ],
+      "id": 337404,
+      "original_language": "en",
+      "original_title": "Cruella",
+      "overview": "Ambientada en el Londres de los años 70, en plena revolución del punk rock, muestra a una joven estafadora llamada Estella, una chica inteligente y creativa, decidida a convertirse en una exitosa diseñadora de moda, que se asocia con un par de ladrones para sobrevivir en las calles de la capital británica. Pero cuando su talento para la moda llama la atención de la legendaria diseñadora, la Baronesa von Hellman, Estella cambia el rumbo de su vida hasta que una serie de acontecimientos y revelaciones que harán que Estella asuma su lado malvado y se convierta en la estridente, moderna y vengativa Cruella de Vil.",
+      "popularity": 1202.782,
+      "poster_path": "/23F18NlCcYdX2kpHE2KZuWye7Lk.jpg",
+      "release_date": "2021-05-26",
+      "title": "Cruella",
+      "video": false,
+      "vote_average": 8.4,
+      "vote_count": 4656
+    },
+    {
+      "adult": false,
+      "backdrop_path": "/nNmJRkg8wWnRmzQDe2FwKbPIsJV.jpg",
+      "genre_ids": [
+        878,
+        28,
+        12
+      ],
+      "id": 24428,
+      "original_language": "en",
+      "original_title": "The Avengers",
+      "overview": "Cuando un enemigo inesperado surge como una gran amenaza para la seguridad mundial, Nick Fury, director de la Agencia SHIELD, decide reclutar a un equipo para salvar al mundo de un desastre casi seguro.",
+      "popularity": 124.872,
+      "poster_path": "/ugX4WZJO3jEvTOerctAWJLinujo.jpg",
+      "release_date": "2012-04-25",
+      "title": "Los Vengadores",
+      "video": false,
+      "vote_average": 7.7,
+      "vote_count": 25168
+    }
+  ]
+}
