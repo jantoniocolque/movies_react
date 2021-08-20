@@ -7,7 +7,7 @@ import {useState,useEffect} from 'react';
 export default function Favorites(){
     const [isLoading, setIsLoading] = useState(true);
     const [movFavorites, setMovFavorites] = useState([]);
-    const endPointGET = `http://localhost:5050/movies`;
+    const endPointGET = `${process.env.REACT_APP_API_HOST}/movies`;
     const setData = ()=>{
         getData(endPointGET).then(data =>{
             setMovFavorites(data);
