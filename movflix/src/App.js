@@ -14,7 +14,6 @@ function App() {
     <Router>
       <div className="App">
         <Navbar />
-        
         <Switch>
           <Route exact path="/" component={Home}/>
           <Route exact path="/movies" component={SearchResult}/>

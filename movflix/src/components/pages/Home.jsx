@@ -1,5 +1,5 @@
 import {useEffect, useState} from 'react';
-import getData from '../features/getData.js';
+import getData from '../features/getData';
 
 import Movies from '../Movies/Index';
 import Loading from '../Loading/Index';

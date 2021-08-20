@@ -1,4 +1,4 @@
-const postData = async (endPoint,payload)=>{
+export default async function postData (endPoint,payload){
     const settings = {
         method: 'POST',
         body:JSON.stringify(payload),

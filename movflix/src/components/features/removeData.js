@@ -1,4 +1,4 @@
-const removeData = async (endPoint)=>{
+export default async function removeData (endPoint){
     const settings = {
         method: 'DELETE',
         headers:{
