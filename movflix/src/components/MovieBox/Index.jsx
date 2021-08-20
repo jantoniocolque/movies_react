@@ -18,16 +18,17 @@ export default function Index(props){
     const endPointGET = `${process.env.REACT_APP_API_HOST}/movies/${movie.id}`;
     const endPointPOST = `${process.env.REACT_APP_API_HOST}/movies`;
 
-    const setData = ()=>{
-        getData(endPointGET).then(data =>{
-            if(movie.id === data.id){
-                setStateFavorite(data);
-                setIsLoading(false);
-            }
-        });
-    }
+    
 
     useEffect(()=>{
+        const setData = ()=>{
+            getData(endPointGET).then(data =>{
+                if(movie.id === data.id){
+                    setStateFavorite(data);
+                    setIsLoading(false);
+                }
+            });
+        }
         setData();
     },[])
 

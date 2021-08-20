@@ -1,7 +1,8 @@
 import './css/index.css';
 import imgDefault from './img/no-poster.jpg' ;
-
+import {useHistory} from 'react-router-dom';
 export default function Index(props){
+	const history = useHistory();
     const {data} = props;
     const imgURL = data.poster_path ? `https://image.tmdb.org/t/p/w500${data.poster_path}` : imgDefault;
     return(
@@ -22,7 +23,7 @@ export default function Index(props){
 				<h5>Reseña: </h5>
 				<p>{data.overview || 'Sin reseña.' }</p>
 				<h5 id="rating">Rating: {data.vote_overage}</h5>
-				<a href="#" className="btn btn-dark my-3">volver al listado</a>
+				<button onclick={()=> history.goBack()} className="btn btn-dark my-3">volver al listado</button>
 			</div>
 		    </div>
         </>

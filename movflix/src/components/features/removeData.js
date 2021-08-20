@@ -10,5 +10,3 @@ export default async function removeData (endPoint){
     let data = await response.json();
     return data;
 }
-
-module.exports= removeData;
