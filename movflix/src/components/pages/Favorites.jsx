@@ -25,7 +25,7 @@ export default function Favorites(){
 
     return(
         <div className="row" id="searchResults">
-            {movFavorites.length == 0 ? 
+            {movFavorites.length === 0 ? 
                 <h2>No hay peliculas favoritas</h2>:
                 <>
                     {isLoading 

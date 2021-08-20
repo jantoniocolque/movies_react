@@ -4,24 +4,23 @@ import getData from '../features/getData.js';
 import postData from '../features/postData.js';
 import removeData from '../features/removeData.js';
 
-import Loading from '../Loading/Index';
 
 import {Link} from 'react-router-dom';
 import {useState, useEffect} from 'react';
 
 
 export default function Index(props){
-    const [isLoading, setIsLoading] = useState(false);
     const [stateFavorite,setStateFavorite] = useState(false);
+    const [ setIsLoading] = useState(false);
     const {movie} = props;
     const imgURL = movie.poster_path? `https://image.tmdb.org/t/p/w500${movie.poster_path}` : imgDefault;
 
-    const endPointGET = `http://localhost:5050/movies/${movie.id}`;
-    const endPointPOST = "http://localhost:5050/movies";
+    const endPointGET = `${process.env.REACT_APP_API_HOST}/movies/${movie.id}`;
+    const endPointPOST = `${process.env.REACT_APP_API_HOST}/movies`;
 
     const setData = ()=>{
         getData(endPointGET).then(data =>{
-            if(movie.id == data.id){
+            if(movie.id === data.id){
                 setStateFavorite(data);
                 setIsLoading(false);
             }
@@ -50,7 +49,7 @@ export default function Index(props){
         <>
             <div className="col-12 col-sm-6 col-lg-3 my-2">
                 <div className="card h-100">
-                    <img src={imgURL} className="card-img-top" />
+                    <img src={imgURL} className="card-img-top" alt="imagen de pelicula"/>
                     {
                         stateFavorite && <i className="fas fa-heart" onClick={myHandlerRemoveFav} style={{"color":"red", "fontSize" : "2rem", "cursor":"pointer","width":"50px"}}></i>
                     }

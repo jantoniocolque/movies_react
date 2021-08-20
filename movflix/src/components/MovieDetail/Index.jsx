@@ -8,7 +8,7 @@ export default function Index(props){
         <>
             <div className="row" id="movieDetail">
 			<div className="col-12 col-md-4">
-				<img src={imgURL} id="movieImg" className="rounded img-thumbnail" />
+				<img src={imgURL} id="movieImg" className="rounded img-thumbnail" alt="imagen de pelicula"/>
 			</div>
 			<div className="col-12 col-md-8" id="movieInfo">
 				<h2>Título: {data.title}</h2>
