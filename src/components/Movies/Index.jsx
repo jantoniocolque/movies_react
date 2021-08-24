@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import MovieBox from '../MovieBox/Index';
 
 export default function Index(props){
     const {data} = props;
+    
     return(
         <>
             {data.map(movie => {

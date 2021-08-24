@@ -7,25 +7,31 @@ import {useState,useEffect} from 'react';
 export default function Favorites(){
     const [isLoading, setIsLoading] = useState(true);
     const [movFavorites, setMovFavorites] = useState([]);
-    const endPointGET = `${process.env.REACT_APP_API_HOST}/movies`;
+    /* En caso de existir un API donde se pueda almacenar los favoritos
+    const endPointGET = `${process.env.REACT_APP_API_HOST}`;
     const setData = ()=>{
         getData(endPointGET).then(data =>{
-            setMovFavorites(data);
+            setMovFavorites(data.movies);
             setIsLoading(false);
         });
     }
-
+    */
+    function mySetData (){
+        setMovFavorites(JSON.parse(localStorage.getItem('favorites')));
+        setIsLoading(false);
+    }
     useEffect(()=>{
-        setData();
+        mySetData();
+    //    setData();
     },[])
 
-    useEffect(()=>{
-        setData();
-    },[movFavorites])
-
+    /*ciclo infinito...*/
+    // useEffect(()=>{
+    //     mySetData();
+    // },[movFavorites]);
     return(
         <div className="row" id="searchResults">
-            {movFavorites.length === 0 ? 
+            {movFavorites.length == 0? 
                 <h2>No hay peliculas favoritas</h2>:
                 <>
                     {isLoading 
@@ -33,7 +39,7 @@ export default function Favorites(){
                     <Loading />}
                 </>
             }
-            {!isLoading && <Movies data = {movFavorites}></Movies>}
+            {!isLoading && <Movies data = {movFavorites} ></Movies>}
         </div>
     )
 }

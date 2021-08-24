@@ -18,10 +18,10 @@ export default function Index(){
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link" to='/'>Home</Link>
+                                <Link className="nav-link" to='/'>Inicio</Link>
                             </li>
                             <li>
-                                <Link className="nav-link" to='/favorites'>Favorites</Link>
+                                <Link className="nav-link" to='/favorites'>Favoritos</Link>
                             </li>
                         </ul>
                         <Search divAlert ={divAlert} />

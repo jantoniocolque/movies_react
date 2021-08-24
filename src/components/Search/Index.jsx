@@ -16,8 +16,8 @@ export default function Index(props){
     return (
         <>
             <form className="d-flex" onSubmit= {mySearch}>
-                <input ref= {inputSearch} className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                <button className="btn btn-outline-info" type="submit">Search</button>
+                <input ref= {inputSearch} className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search" />
+                <button className="btn btn-outline-info" type="submit">Buscar</button>
             </form>
         </>
     );
